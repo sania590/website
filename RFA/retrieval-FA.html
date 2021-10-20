@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieval FA</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sidebarStyle.css">
+</head>
+
+<body>
+    <div class="page-wrapper toggled">
+
+        <!-- sidebar starts-->
+        <div class="sidebar-wrapper">
+            <div class="sidebar-content">
+
+                <!-- profile start -->
+                <div class="profile">
+                    <img src="../images/profile_image.jpeg" alt="">
+                    <h5>Marilyn D</h5>
+                    <h6 class="status">Online</h6>
+                </div>
+                <!-- profile ends -->
+                <!-- sidebar menu starts -->
+                <div class="sidebar-item sidebar-menu">
+                    <ul>
+                        <!-- 
+                             main navigation
+                         -->
+                        <li class="menu_header">Main navigation</li>
+                        <!-- single link Dashboard-->
+                        <li>
+                            <a href="">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 menuicons " viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                                </svg>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+
+                        <!-- single link Deposits-->
+                        <li>
+                            <a href="">
+                                <i class="far fa-credit-card menuicons"></i>
+                                <span>Deposits</span>
+                            </a>
+                        </li>
+                        <!-- single link Unit Storage-->
+                        <li>
+                            <a href="">
+                                <i class="fas fa-box menuicons"></i>
+                                <span>Unit Storage</span>
+                            </a>
+                        </li>
+                        <!-- single link Scrap-->
+                        <li>
+                            <a href="">
+                                <i class="fas fa-scroll menuicons"></i>
+                                <span>Scrap</span>
+                            </a>
+                        </li>
+                        <!-- single link withdrawal-->
+                        <li>
+                            <a href="">
+                                <i class="fas fa-bookmark menuicons"></i>
+
+                                <span>withdrawal</span>
+                            </a>
+                        </li>
+                        <!-- single link consumables-->
+                        <li>
+                            <a href="">
+                                <i class="fas fa-box menuicons"></i>
+                                <span>consumables</span>
+                            </a>
+                        </li>
+
+                        <!--
+                            admin navigation
+                         -->
+                        <li class="menu_header">Admin navigation
+                        </li>
+                        <!-- single link accounts -->
+                        <li>
+                            <a href="accounts.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 menuicons" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+
+
+                                <span> Accounts</span>
+                            </a>
+                        </li>
+                        <!-- single link roles-->
+                        <li>
+                            <a href="roles.html">
+
+                                <i class="fas fa-paint-roller menuicons"></i>
+
+
+                                <span>Roles</span>
+                            </a>
+                        </li>
+                        <!-- single link client name-->
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 menuicons" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                                <span>Client name restriction</span>
+                            </a>
+                        </li>
+                        <!-- single link settings-->
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 menuicons" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+
+
+                                <span>Settings</span>
+                            </a>
+                        </li>
+
+                        <!--  
+                            Misc navigation
+                        -->
+                        <li class="menu_header">Misc navigation
+
+                        </li>
+                        <!-- single link reports-->
+                        <li>
+                            <a href="">
+                                <i class="fab fa-accusoft  menuicons"></i>
+                                <span>Reports</span>
+                            </a>
+                        </li>
+
+                        <!-- single link documentation-->
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 menuicons" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+
+                                <span>Documentation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- sidebar menu ends -->
+
+
+        <!-- page content -->
+        <div class="page-content">
+            <div id="overlay" class="overlay"></div>
+            <!-- toggle-desktop btn -->
+            <button id="toggle-sidebar">
+                <i class="fas fa-chevron-left toggleIcon"></i>
+
+            </button>
+            <!-- toggle sidebar for mobile -->
+            <button class="burgerbtn" id="burgerbtn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 burgericon" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <div class="mainContent">
+                <div class="breadcrumb_container container">
+                    <div class="row">
+                        <h5 class="page_title col-md-4 col-sm-6 ">Retrieval</h5>
+                        <form action="" class="col-md-4 col-sm-6  searchform">
+                            <div class="row">
+                                <input type="text" class="col-10 searchInput" placeholder="Search">
+                                <button class="col-2 searchBtn">
+                                    <i class="fas fa-search searchicon "></i>
+                                </button>
+                            </div>
+
+                        </form>
+                        <h6 class="breadcrumb_title col-md-4 col-sm-6 ">
+                            <span class="px-2">Home </span>
+                            <i class="fas fa-chevron-right "></i>
+                            <span class="px-2">retrieval</span>
+                        </h6>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <h5 class="sub-heading mt-4">retrieval transaction</h5>
+
+                    <div class="row">
+                        <div class="col-md-4 my-2">
+                            <div class="row">
+                                <div class="col-md-3 col-5">
+                                    <label for="" class="fontlg">operator</label>
+                                </div>
+                                <div class="col-md-9 col-7 mt-2">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 my-2">
+                            <div class="row">
+                                <div class="col-md-3 col-5">
+                                    <label for="" class="fontlg">Date</label>
+                                </div>
+                                <div class="col-md-9 col-7 mt-2">
+                                    <input type="date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-5">
+                                    <label for="" class="fontlg">user id</label>
+                                </div>
+                                <div class="col-md-9 col-7 mt-2">
+                                    <input type="date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-5">
+                                    <label for="" class="fontlg">department</label>
+                                </div>
+                                <div class="col-md-9 col-7 mt-2">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mt-2">
+                            <div class="row">
+                                <div class="col-md-3 col-5">
+                                    <label for="" class="fontlg">time</label>
+                                </div>
+                                <div class="col-md-9 col-7 mt-2">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" table_container mt-4">
+
+                        <table>
+                            <thead>
+                                <th>
+                                    <select name="" id="">
+                                        <option value="">lab team</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </th>
+                                <th>EWIP #</th>
+                                <th>
+                                    <select name="" id="">
+                                        <option value="lab team">Box#</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </th>
+                                <th>
+                                    <select name="" id="">
+                                        <option value="lab team">Retention</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </th>
+                                <th>
+                                    <select name="" id="">
+                                        <option value="lab team">Location</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </th>
+                                <th>retrieved from</th>
+                                <th>reason for retrieval</th>
+                            
+
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <button class="button submitBtn submitbtnmargin" >submit</button>
+                    </div>
+
+
+
+                </div>
+
+                <div class="container mt-8">
+                    <h5 class="sub-heading">Retrieval history report</h5>
+                   
+                    <div class="row">
+                        <div class="col-md-4 my-2">
+                            <div class="row">
+                                <div class="col-md-3 col-5">
+                                    <label for="" class="fontlg">from</label>
+                                </div>
+                                <div class="col-md-9 col-7 mt-2">
+                                    <input type="date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 my-2">
+                            <div class="row">
+                                <div class="col-md-2 col-5">
+                                    <label for="" class="fontlg">to</label>
+                                </div>
+                                <div class="col-md-9 col-7 mt-2">
+                                    <input type="date">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4  mt-2">
+                             <!-- submitbutton -->
+                    <button class="button submitBtn" type="submit">Download</button>
+                        </div>
+                    </div>
+                    <div class=" table_container mt-4">
+
+                        <table>
+                            <thead>
+                                <th>Lab team</th>
+                                <th>EWIP #</th>
+                                <th>box #</th>
+                                <th>retention</th>
+                                <th>location</th>
+                                <th>encoder</th>
+                                <th>date time encoded</th>
+                                <th>retrieved from</th>
+                                <th>reason for retrieval</th>
+                                
+                               
+                            </thead>
+
+                           <tbody>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+
+
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+
+
+
+                                </tr>
+                                <tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        // dropdowns
+        $('.sidebar-dropdown > a').click(function () {
+            $('.sidebar-submenu').slideUp(200);
+            if ($(this).parent().hasClass('active')) {
+                $('.sidebar-dropdown').removeClass('active');
+                $(this).parent().removeClass('active');
+            }
+            else {
+                $('.sidebar-dropdown').removeClass('active');
+                $(this).next('.sidebar-submenu').slideDown(200);
+                $(this).parent().addClass('active');
+
+            }
+
+        });
+
+        // toggle sidebar for desktop
+        $('#toggle-sidebar').click(function () {
+            $('.page-wrapper').toggleClass('toggled');
+        });
+        // toggle sidebar for mobile
+        $('#burgerbtn').click(function () {
+            $('.sidebar-wrapper').toggleClass('showmenu');
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

@@ -66,6 +66,7 @@ a{
     border: none;
     border-radius: 3px;
     margin-left: 0;
+    text-transform: capitalize;
  
 }
 .button:hover{
@@ -127,7 +128,7 @@ select{
 input, textarea{
     background: rgb(247, 247, 247);
     padding: 1px 2px;
-    font-size: .7em;
+    font-size: .8em;
     border: 1px solid #ebeaea;
     padding: 3px 5px;
     width: 100%;
@@ -162,72 +163,6 @@ input, textarea{
 .breadcrumb_container .breadcrumb_title span:nth-child(3){
    color: #676767;
 }
-
-/* main heading of page */
-.mainHeading{
-    background: #1b2c3d;
-    width: fit-content;
-    color: #dfdfdf;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 0 30px 30px 0 ;
-    text-transform: capitalize;
-}
-/* sub heading */
-.sub-heading{
-    position: relative;
-    margin-bottom: 20px;
-}
-.sub-heading:after{
-    content: "";
-    display: block;
-    width: 70px;
-    height: 5px;
-    background: #09b097;
-    left: 2px;
-    top: 23px;
-    position: absolute;
-}
-
-/* -------- tabel styling ------ */
-.table_container{
-    position: relative;
-    display: block;
-    overflow-x: auto;
-
-}
- table{
-    display: table;
-    width: 900px;
-    overflow-x: scroll;
-    overflow-x: auto;
-  
-}
-th{
-    font-size: .8em;
-    font-weight: 500;
-    background: #1b2c3d;
-    color: #cecece;
-    padding: 5px ;
-    text-transform: capitalize;
-    border-right: 1px solid #09b097;
-
-}
-tr{
-    margin: 10px;
-   
-}
-td{
-    background: rgb(247, 247, 247);
-}
-
-@media (min-width: 900px){
-    table{
-        max-width: 1100px;
-        width: 100%;
-    }
-}
-
 /* search bar designing */
 .searchform{
     position: relative;
@@ -264,6 +199,81 @@ td{
     font-size: 15px;
     padding-left: 10px;
 }
+
+
+/* main heading of page */
+.mainHeading{
+    background: #1b2c3d;
+    width: fit-content;
+    color: #dfdfdf;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 0 30px 30px 0 ;
+    text-transform: capitalize;
+}
+/* sub heading */
+.sub-heading{
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.sub-heading:after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 5px;
+    background: #09b097;
+    left: 2px;
+    top: 23px;
+    position: absolute;
+
+}
+
+/* -------- tabel styling ------ */
+.table_container{
+    position: relative;
+    display: block;
+    overflow-x: auto;
+
+}
+ table{
+    display: table;
+    width: 900px;
+    overflow-x: scroll;
+    overflow-x: auto;
+  
+}
+th{
+    font-size: .8em;
+    font-weight: 500;
+    background: #1b2c3d;
+    color: #cecece;
+    padding: 5px ;
+    text-transform: capitalize;
+    border-right: 1px solid #09b097;
+
+}
+tr{
+    margin: 10px;
+   
+}
+td{
+    background: rgb(247, 247, 247);
+}
+/* select inside of th styling*/
+th select{
+    width: 100%;
+    padding: 3px;
+}
+
+@media (min-width: 900px){
+    table{
+        max-width: 1100px;
+        width: 100%;
+    }
+}
+
 
 
 
