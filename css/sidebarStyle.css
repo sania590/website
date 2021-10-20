@@ -1,0 +1,215 @@
+
+
+/*  ---------------- Sidebar styling ----------------*/
+
+.sidebar-wrapper{
+    width: 280px;
+    height: 100%;
+    max-height: 100%;
+    background-color: #1b2c3d;
+    position: fixed;
+    top: 0;
+    left: -280px;
+    z-index: 999;
+    -webkit-transition: left .3s ease , width .3s ease;
+    transition: left .3s ease , width .3s ease;
+
+
+}
+
+.sidebar-wrapper a{
+     -webkit-transition: color .3s ease ;
+    transition: color .3s ease ;
+    font-size: .9em;
+}
+.sidebar-wrapper .sidebar-item{
+    -webkit-transition: all .3s linear ;
+    transition: all .3s linear ;
+}
+.sidebar-wrapper .sidebar-content{
+    max-height: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    position: relative;
+    background-color: #1b2c3d;
+    padding-bottom: 50px;
+}
+.page-wrapper.toggled .sidebar-wrapper{
+    left: 0px;
+}
+
+.sidebar-wrapper .sidebar-content .toggleIcon{
+  font-size: 35px;
+    color: #1b2c3d;
+    border-radius: 50%;
+}
+/* profile section styling */
+.sidebar-wrapper .sidebar-content .profile{
+    padding: 30px 0 5px;
+}
+
+.sidebar-wrapper .profile img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #09b097;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.sidebar-wrapper .sidebar-content .profile h5{
+    color: #ffffff;
+    text-align: center;
+
+}
+.sidebar-wrapper .sidebar-content .profile .status{
+    color: #09b097;
+    text-align: center;
+}
+
+/* section headers styling */
+.sidebar-wrapper .sidebar-content .sidebar-menu .menu_header{
+    background-color: #ffffff;
+    width: 100%;
+    border-right: 5px solid #09b097;
+    border-left: 5px solid #09b097;
+   text-align: center;
+   padding: 3px 0;
+   font-weight: 600;
+   margin: 5px 0;
+   font-size: .8em;
+   text-transform: capitalize;
+
+}
+/* sedebar menu links */
+.sidebar-wrapper .sidebar-content .sidebar-menu li a{
+    color: #e3e3e3;
+    width: 100%;
+    display: block;
+    padding: 8px 0;
+    padding-left: 30px;
+    text-transform: capitalize;
+    font-size: .8em;
+}
+.sidebar-wrapper .sidebar-content .sidebar-menu li a:hover{
+    background-color: #293d52;
+}
+/* drop down icon styling */
+.sidebar-wrapper .sidebar-content .sidebar-menu .dropicon{
+    
+    margin-right: 10px;
+    float: right;
+}
+
+
+
+/* sidebar-submenu*/
+.sidebar-wrapper .sidebar-content .sidebar-menu  .sidebar-submenu a{
+    padding: 6px 0;
+    padding-left: 60px;
+    font-size: .7em;
+
+}
+
+/* hide dropdown sub menu */
+.sidebar-wrapper .sidebar-content .sidebar-submenu{
+    display: none;
+}
+
+
+
+
+/* icons */
+.menuicons{
+    width: 20px;
+    color: #09b097;
+}
+.iconsContainer{
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.sub-icons{
+    width: 18px;
+    color: #09b097;
+}
+
+/* --------- Page content ------ */
+.page-wrapper .page-content{
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: padding-left .3s ease;
+    transition: padding-left .3s ease;
+    /* overflow-x: hidden; */
+
+}
+.page-wrapper .page-content .overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background: #000;
+    opacity: .5;
+    display: none;
+}
+/* toggle button for desktop  */
+#toggle-sidebar{
+    background: #09b097;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+   
+   
+}
+/* hiding humburger icon on desktop */
+.burgerbtn{
+    display: none;
+}
+
+/* mainContent */
+.mainContent{
+    padding: 10px 10px 40px;
+}
+
+
+@media  screen and (min-width: 768px){
+    .page-wrapper.toggled .page-content{
+        padding-left: 280px;
+    }
+}
+@media  screen and (max-width: 768px){
+    .sidebar-wrapper{
+        display: none;
+    }
+    #toggle-sidebar{
+        display: none;
+    }
+    /* burgericon for mobile devices */
+    .burgerbtn{
+        background: transparent;
+        border: none;
+        float: right;
+        margin: 10px ;
+        display: block;
+    }
+    .burgericon{
+       width: 30px;
+    }
+    .showmenu {
+        display: block;
+        width: 280px;
+       
+    }
+    .mainContent{
+        margin-top: 50px;
+    }
+
+}
+
+
+
+

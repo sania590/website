@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+@media(max-width: 768px){
+   body{
+       font-size: 16px;
+   }
+}
+/* container */
+.container{
+    max-width: 1400px;
+    width: 95%;
+    padding: 0;
+}
+/* form_container */
+.form_container{
+    max-width: 1100px;
+    width: 100%;
+}
+/* typography */
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.7em;
+
+}
+h3{
+    font-size: 1.2em;
+}
+h4{
+    font-size: 1em;
+}
+h5{
+    font-size: .9em;
+    text-transform: capitalize;
+}
+h6{
+    font-size: .8em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+.mt-8{
+    margin-top: 60px;
+}
+/* button styling */
+.button{
+    padding: 4px 10px;
+    font-size: .8em;
+    background: #09b097;
+    color: #ebeaea;
+    border: none;
+    border-radius: 3px;
+    margin-left: 0;
+ 
+}
+.button:hover{
+    background-color: #089a84;
+    color: #ebeaea;
+}
+.submitBtn{
+    padding: 4px 20px;
+    margin-top: 9px;
+}
+.submitbtnmargin{
+    margin-top: 20px;
+}
+.tablebtn{
+    font-size: .7em;
+}
+.delbtn{
+    background-color: #b00909;
+}
+.delbtn:hover{
+    background: #ed4141;
+}
+/* label styling */
+label{
+    font-size: 12.5px;
+    display: block;
+    color: #2a2a2a;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.fontlg{
+    font-size: .8em;
+}
+ /* checkbox styling */
+input.checkbox{
+    width: 20px;
+    height: 20px;
+}
+/* selectbox */
+select{
+    background: rgb(237, 237, 237);
+    text-transform: uppercase;
+    font-size: .9em;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    padding: .5em;
+  
+
+}
+/* input and textarea */
+input, textarea{
+    background: rgb(247, 247, 247);
+    padding: 1px 2px;
+    font-size: .7em;
+    border: 1px solid #ebeaea;
+    padding: 3px 5px;
+    width: 100%;
+    color: #575757;
+}
+
+
+
+
+
+/*  breadcrumbs styling */
+.breadcrumb_container{
+    background: rgb(239, 239, 239);
+    padding: 10px 20px 0;
+
+}
+.breadcrumb_container .page_title{
+    text-transform: uppercase;
+}
+.breadcrumb_container .breadcrumb_title {
+   display: flex;
+   flex-direction: row;
+   justify-content: right;
+   float: right;
+}
+.breadcrumb_container .breadcrumb_title span{
+    text-transform: capitalize;
+}
+.breadcrumb_container .breadcrumb_title span:first-child{
+    color: #09b097;
+}
+.breadcrumb_container .breadcrumb_title span:nth-child(3){
+   color: #676767;
+}
+
+/* main heading of page */
+.mainHeading{
+    background: #1b2c3d;
+    width: fit-content;
+    color: #dfdfdf;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 0 30px 30px 0 ;
+    text-transform: capitalize;
+}
+/* sub heading */
+.sub-heading{
+    position: relative;
+    margin-bottom: 20px;
+}
+.sub-heading:after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 5px;
+    background: #09b097;
+    left: 2px;
+    top: 23px;
+    position: absolute;
+}
+
+/* -------- tabel styling ------ */
+.table_container{
+    position: relative;
+    display: block;
+    overflow-x: auto;
+
+}
+ table{
+    display: table;
+    width: 900px;
+    overflow-x: scroll;
+    overflow-x: auto;
+  
+}
+th{
+    font-size: .8em;
+    font-weight: 500;
+    background: #1b2c3d;
+    color: #cecece;
+    padding: 5px ;
+    text-transform: capitalize;
+    border-right: 1px solid #09b097;
+
+}
+tr{
+    margin: 10px;
+   
+}
+td{
+    background: rgb(247, 247, 247);
+}
+
+@media (min-width: 900px){
+    table{
+        max-width: 1100px;
+        width: 100%;
+    }
+}
+
+/* search bar designing */
+.searchform{
+    position: relative;
+    right: 0;
+    width: fit-content;
+}
+.searchInput{
+    background: #09b097;
+    border-radius: 30px;
+    width: 300px;
+    padding: 7px ;
+    margin-top: -9px;
+    color: white;
+    padding-left: 10px;
+}
+.searchBtn{
+    width: 40px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px  5px;
+    margin-top: -10px;
+   
+}
+.searchicon{
+    width: 30px;
+    color: white;
+    font-size: 13px;
+}
+::placeholder{
+    color: rgb(237, 237, 237);
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+
+
+ 
